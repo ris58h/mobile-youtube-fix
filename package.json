@@ -1,0 +1,10 @@
+{
+    "name": "mobile-youtube-fix",
+    "scripts": {
+        "dist": "node dist.js"
+    },
+    "devDependencies": {
+        "archiver": "^3.0.0",
+        "fs-extra": "^6.0.1"
+    }
+}
