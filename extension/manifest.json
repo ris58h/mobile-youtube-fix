@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "Mobile YouTube fix",
+    "description": "Adds features from desktop version to mobile version of YouTube.",
+    "version": "0.1",
+
+    "applications": {
+        "gecko": {
+            "id": "mobile-youtube-fix@ris58h"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://m.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
