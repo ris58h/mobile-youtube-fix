@@ -13,8 +13,7 @@ const KEY_FUNCTION_MAP = {
 	'<': slowDown,
 	'>': speedUp,
 	// Home/End on the seek bar: Seek to the beginning/last seconds of the video.
-	'ArrowUp': increaseVolume(0.05),
-	'ArrowDown': decreaseVolume(0.05),
+	// Up/Down arrow on the seek bar: Increase/Decrease volume 5%.
 	// Number 1 or Shift+1: Move between H1 headers.
 	// '/': Go to search box.
 	// 'f': Activate full screen. If full screen mode is enabled, activate F again or press escape to exit full screen mode.
@@ -107,19 +106,5 @@ function seekPercent(percent) {
 	return () => {
 		const video = getVideo()
 		video.currentTime = video.duration / 100 * percent
-	}
-}
-
-function increaseVolume(step) {
-	return () => {
-		const video = getVideo()
-		video.volume = Math.min(video.volume + step, 1)
-	}
-}
-
-function decreaseVolume(step) {
-	return () => {
-		const video = getVideo()
-		video.volume = Math.max(video.volume - step, 0)
 	}
 }

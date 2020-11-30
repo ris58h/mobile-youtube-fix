@@ -7,6 +7,5 @@ j - Seek backward 10 seconds in player.
 l - Seek forward 10 seconds in player.
 < - Slow down the video playback rate.
 > - Speed up the video playback rate.
-Up/Down arrow - Increase/Decrease volume 5%.
 1 to 9 - Seek to the 10% to 90% of the video.
 0 - Seek to the beginning of the video.
