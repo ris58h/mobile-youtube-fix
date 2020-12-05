@@ -3,7 +3,7 @@
 
     "name": "Mobile YouTube Fix",
     "description": "Adds features from desktop version to mobile version of YouTube.",
-    "version": "0.2",
+    "version": "0.3",
 
     "applications": {
         "gecko": {
