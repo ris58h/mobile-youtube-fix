@@ -27,6 +27,9 @@ for (let i = 0; i < 10; i++) {
 }
 
 window.addEventListener('keydown', (e) => {
+	if (document.activeElement && document.activeElement.tagName == 'INPUT') {
+		return
+	}
 	const f = KEY_FUNCTION_MAP[e.key]
 	if (f) {
 		f()
